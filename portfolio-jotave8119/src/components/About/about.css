@@ -1,0 +1,25 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .aboutBox{
+    background-color: #763e3e;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutTitle{
+    color: white;
+    font-size: 2rem;
+    border-bottom: solid 2px rgb(66, 176, 244);
+    animation: fadeIn 2s;
+  }
