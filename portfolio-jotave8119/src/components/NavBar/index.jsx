@@ -15,14 +15,6 @@ const NavBar = () => {
         <img className="photo" title="João" src={profile} alt="João" />
         <h2 className="name">
           João
-          <div class="wrapper">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="shadow"></div>
-            <div class="shadow"></div>
-            <div class="shadow"></div>
-        </div>
         </h2>
       </div>
       <nav ref={navRef}>

@@ -7,7 +7,7 @@ header{
     z-index: 9999;
     background-color: #000000da;
     color: #ffffff;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,7 +42,7 @@ header{
    font-size: 1.5rem;
    position: fixed;
    top: 30;
-   margin-left: 250px;
+   margin-left: 150px;
    display: flex;
    align-items: center;
    gap: 7px;
@@ -125,94 +125,6 @@ nav a:hover{
     }
 }
 
-.wrapper {
-    width: 80px;
-    height: 60px;
-    margin-top: 30px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .circle {
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: #fff;
-    left: 10%;
-    transform-origin: 50%;
-    animation: circle7124 .5s alternate infinite ease;
-  }
-  
-  @keyframes circle7124 {
-    0% {
-      top: 10px;
-      height: 5px;
-      border-radius: 50px 50px 25px 25px;
-      transform: scaleX(1.7);
-    }
-  
-    40% {
-      height: 15px;
-      border-radius: 50%;
-      transform: scaleX(1);
-    }
-  
-    100% {
-      top: 0%;
-    }
-  }
-  
-  .circle:nth-child(2) {
-    left: 45%;
-    animation-delay: .2s;
-  }
-  
-  .circle:nth-child(3) {
-    left: auto;
-    right: 15%;
-    animation-delay: .3s;
-  }
-  
-  .shadow {
-    width: 10px;
-    height: 2px;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,0.9);
-    position: absolute;
-    top: 42px;
-    transform-origin: 50%;
-    z-index: -1;
-    left: 15%;
-    filter: blur(1px);
-    animation: shadow046 .5s alternate infinite ease;
-  }
-  
-  @keyframes shadow046 {
-    0% {
-      transform: scaleX(1.5);
-    }
-  
-    40% {
-      transform: scaleX(1);
-      opacity: .7;
-    }
-  
-    100% {
-      transform: scaleX(.2);
-      opacity: .4;
-    }
-  }
-  
-  .shadow:nth-child(4) {
-    left: 45%;
-    animation-delay: .2s
-  }
-  
-  .shadow:nth-child(5) {
-    left: auto;
-    right: 15%;
-    animation-delay: .3s;
-  }
+
 
 
