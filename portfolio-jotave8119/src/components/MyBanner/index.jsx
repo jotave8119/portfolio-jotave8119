@@ -1,6 +1,6 @@
 import TypeWriterEffect from "react-typewriter-effect";
 import profile from "../../assets/profile.png";
-import "./banner.css";
+import "./style.css";
 
 const MyBanner = () => {
   return (

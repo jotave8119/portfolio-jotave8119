@@ -1,9 +1,8 @@
 import "./App.css";
 import About from "./components/About";
 import MyBanner from "./components/MyBanner";
+import MyProjects from "./components/MyProjects";
 import NavBar from "./components/NavBar";
-
-// import { Animator, ScrollContainer, ScrollPage } from 'react-scroll-motion'
 
 const App = () => {
   return (
@@ -11,6 +10,7 @@ const App = () => {
       <NavBar />
       <MyBanner />
       <About />
+      <MyProjects/>
     </>
   );
 };

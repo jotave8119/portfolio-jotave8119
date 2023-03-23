@@ -1,0 +1,77 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .mySwiper{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .proTitle{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 150px;
+    height: 50px;
+    margin-top: 70px;
+    animation: fadeIn 2s;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid 2px #35baf8;
+    animation: fadeIn 2s;
+  }
+
+  .mySwiper a{
+    width: 100%;
+    height: 100%;
+  }
+
+  .mySwiper img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mySwiper img:hover{
+    filter: opacity(70%);
+    transition: 0.5s;
+  }
+
+  @media(min-width:768px){
+   .mySwiper{
+    height: 500px;
+   }
+  }
+
+  .mySwiper img{
+    padding: 2em;
+  }
+
+  @media(min-width:1024px){
+    .mySwiper{
+     height: 800px;
+    }
+    .mySwiper img{
+      padding: 2.5em;
+    }
+    .mySwiper a{
+      height: 50px;
+      width: 150px;
+      left: 620px;
+      top: 650px;
+     }
+
+    .proTitle{
+      margin-top: 80px;
+    }
+   }

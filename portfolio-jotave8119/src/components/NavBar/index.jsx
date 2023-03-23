@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./style.css";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import profile from "../../assets/profile.png";
