@@ -49,15 +49,6 @@ header{
 
 }
 
-.point1{
-    animation: fadeIn 1.5s linear infinite;
-}
-.point2{
-    animation: fadeIn 1.7s linear infinite;    
-}
-.point3{
-    animation: fadeIn 1.9s linear infinite;    
-}
 
 nav{
     display: flex;
@@ -88,6 +79,7 @@ nav a:hover{
     opacity: 0;
 }
 
+
 @media(max-width:1024px) {
     .openBtn{
         visibility: visible;
@@ -104,8 +96,8 @@ nav a:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #000000dc;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(25px);
+        background-color: #000000f5;
         transition: 1s;
         transform: translateY(-100vh);
     }

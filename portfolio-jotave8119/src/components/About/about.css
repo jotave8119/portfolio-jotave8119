@@ -9,17 +9,68 @@
   }
 
   .aboutBox{
-    background-color: #763e3e;
+    background-color: rgb(18, 17, 17);
     width: 100%;
-    height: 400px;
+    height: 800px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.5em;
   }
 
   .aboutTitle{
-    color: white;
+    color: #ffffff;
+    text-align: center;
     font-size: 2rem;
+    font-weight: 900;
     border-bottom: solid 2px rgb(66, 176, 244);
     animation: fadeIn 2s;
   }
+
+.aboutText{
+  width: 100%;
+  color: #ffffff;
+  text-align: justify;
+  font-weight: 600;
+  animation: fadeInLeft 2s;
+}
+
+@media(min-width:375px){
+  .aboutBox{
+    height: 700px;
+    gap: 35px;
+  }
+}
+
+@media(min-width:425px){
+  .aboutBox{
+    height: 650px;
+    gap: 35px;
+  }
+}
+
+@media(min-width:768px){
+  .aboutBox{
+    height: 650px;
+    gap: 35px;
+  }
+
+  .aboutText{
+    width: 70%;
+    font-size: 1.2rem;
+  }
+}
+
+@media(min-width:1024px){
+  .aboutBox{
+    height: 600px;
+    gap: 70px;
+  }
+
+  .aboutText{
+    width: 70%;
+    font-size: 1.2rem;
+  }
+}
