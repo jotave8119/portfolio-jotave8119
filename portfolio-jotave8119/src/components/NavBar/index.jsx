@@ -1,75 +1,89 @@
 import "./style.css";
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 import profile from "../../assets/profile.png";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
-  const navRef = useRef();
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsiveNav");
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header>
-      <div className="photoBox">
-        <img className="photo" title="João" src={profile} alt="João" />
-        <h2 className="name">João</h2>
-      </div>
-      <nav ref={navRef}>
+    <div className="Navbar">
+      <img className="photo" title="João" src={profile} alt="João" />
+      {/* <span className="nav-logo">DevLHB</span> */}
+      <div className={`nav-items ${isOpen && "open"}`}>
         <Link
           to="about"
           spy={true}
           smooth={true}
           offset={50}
           duration={1000}
-          onClick={showNavbar}
           title="Sobre"
+          className="link"
+          onClick={() => setIsOpen(!isOpen)}
         >
           Sobre
         </Link>
         <Link
           to="projects"
-          onClick={showNavbar}
           spy={true}
           smooth={true}
           offset={50}
           duration={1000}
           title="Projetos"
+          className="link"
+          onClick={() => setIsOpen(!isOpen)}
         >
           Projetos
         </Link>
         <Link
           to="techs"
-          onClick={showNavbar}
           spy={true}
           smooth={true}
           offset={50}
           duration={1000}
           title="Tecnologias"
+          className="link"
+          onClick={() => setIsOpen(!isOpen)}
         >
           Tecnologias
         </Link>
         <Link
           to="contact"
-          onClick={showNavbar}
           spy={true}
           smooth={true}
           offset={50}
           duration={1000}
           title="Contato"
+          className="link"
+          onClick={() => setIsOpen(!isOpen)}
         >
           Contato
         </Link>
-        <button className="openBtn closeBtn" onClick={showNavbar}>
-          <FaTimes size={20} />
-        </button>
-      </nav>
+      </div>
 
-      <button className="openBtn" onClick={showNavbar}>
-        <FaBars size={20} />
-      </button>
-    </header>
+      <div
+        className={`nav-toggle ${isOpen && "open"}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className="bar"></div>
+      </div>
+    </div>
+    // <header>
+    //   <div className="photoBox">
+    //
+    //     <h2 className="name">João</h2>
+    //   </div>
+    //   <nav className={`nav-items ${isOpen && "open"}`} ref={navRef}>
+
+    // //     <button className="openBtn closeBtn" onClick={showNavbar}>
+    // //       <FaTimes size={20} />
+    // //     </button>
+    // //   </nav>
+
+    // //   <button className="openBtn" onClick={showNavbar}>
+    // //     <FaBars size={20} />
+    // //   </button>
+    // // </header>
   );
 };
 

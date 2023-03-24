@@ -66,7 +66,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,12 +80,12 @@
     height: 250px;
     color: #ffffff;
     position: absolute;
-    background-color: rgb(235, 78, 10);
+    background-color: #f06529;
     border-radius: 10px;
-    border: solid 3px rgb(235, 78, 10);
+    border: solid 3px #f06529;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
-    box-shadow: rgba(235, 78, 10) 0px 5px 15px;
+    box-shadow: #f06529 0px 5px 15px;
 }
 .htmlIcon:hover::before {
     transform: scale(1);
@@ -103,7 +102,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +139,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +176,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,7 +214,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,7 +251,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +288,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,7 +326,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,7 +363,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -410,7 +401,6 @@
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: solid 2px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -429,7 +419,7 @@
     border-radius: 10px;
     border: solid 3px #0d1a5c;
     transform: scale(0);
-	transition: 0.3s ease-in-out;
+	  transition: 0.3s ease-in-out;
     box-shadow: #0d1a5c 0px 5px 15px;
      
 }

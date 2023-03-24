@@ -13,13 +13,13 @@ import screenweather from "../../assets/screenweather.png";
 
 const MyProjects = () => {
   return (
-    <>
+    <div className="proBox">
       <h2 className="proTitle" id="projects">
         Projetos
       </h2>
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={10}
         loop={true}
         pagination={{
           clickable: true,
@@ -30,9 +30,23 @@ const MyProjects = () => {
           "--swiper-navigation-color": "#35baf8",
           "--swiper-pagination-color": "#35baf8",
         }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className="mySld">
           <a
             href="https://devducksjv.vercel.app/"
             target="_blank"
@@ -41,17 +55,18 @@ const MyProjects = () => {
           >
             <img
               src={screendevducks}
+              className="img"
               alt="devducks"
               loading="lazy"
               title="Ver devducks"
             />
-            <span className="desc">
+            {/* <span className="desc">
               <strong>Projeto Devducks</strong>
               Clique na Imagem para ver o Projeto!
-            </span>
+            </span> */}
           </a>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="mySld">
           <a
             href="https://grupo3-front-end-m3.vercel.app/home"
             target="_blank"
@@ -60,17 +75,18 @@ const MyProjects = () => {
           >
             <img
               src={screendevhelp}
+              className="img"
               alt="devhelp"
               loading="lazy"
               title="Ver devhelp"
             />
-             <span className="desc">
+             {/* <span className="desc">
               <strong>Projeto DevHelp</strong>
               Clique na Imagem para ver o Projeto!
-            </span>
+            </span> */}
           </a>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="mySld">
           <a
             href="https://kezie-hub-kohl.vercel.app/"
             target="_blank"
@@ -79,17 +95,18 @@ const MyProjects = () => {
           >
             <img
               src={screenkenziehub}
+              className="img"
               alt="kenzieHub"
               loading="lazy"
               title="Ver KenizeHub"
             />
-             <span className="desc">
+             {/* <span className="desc">
               <strong>Projeto KenzieHub</strong>
               Clique na Imagem para ver o Projeto!
-            </span>
+            </span> */}
           </a>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="mySld">
           <a
             href="https://hamburgueria-opal-pi.vercel.app/"
             target="_blank"
@@ -98,17 +115,18 @@ const MyProjects = () => {
           >
             <img
               src={screenburguer}
+              className="img"
               alt="KenzieBurguer"
               loading="lazy"
               title="Ver KenzieBurguer"
             />
-             <span className="desc">
+             {/* <span className="desc">
               <strong>Projeto KenzieBurger</strong>
               Clique na Imagem para ver o Projeto!
-            </span>
+            </span> */}
           </a>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="mySld">
           <a
             href="https://nukenzie-s130.vercel.app/"
             target="_blank"
@@ -117,17 +135,18 @@ const MyProjects = () => {
           >
             <img
               src={screennukenzie}
+              className="img"
               alt="NuKenzie"
               loading="lazy"
               title=" Ver NuKenzie"
             />
-             <span className="desc">
+             {/* <span className="desc">
               <strong>Projeto NuKenzie</strong>
               Clique na Imagem para ver o Projeto!
-            </span>
+            </span> */}
           </a>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="mySld">
           <a
             href="https://jotave8119.github.io/project-weather/"
             target="_blank"
@@ -136,18 +155,19 @@ const MyProjects = () => {
           >
             <img
               src={screenweather}
+              className="img"
               alt="weatherApp"
               loading="lazy"
               title=" Ver WeatherApp"
             />
-             <span className="desc">
+             {/* <span className="desc">
               <strong>Projeto ClimaApp</strong>
               Clique na Imagem para ver o Projeto!
-            </span>
+            </span> */}
           </a>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 
