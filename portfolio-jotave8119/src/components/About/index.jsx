@@ -2,7 +2,7 @@ import "./style.css";
 
 const About = () => {
   return (
-    <section className="aboutBox">
+    <section className="aboutBox" id="about">
       <h2 className="aboutTitle" title="Um pouco sobre mim!">Sobre</h2>
       <p className="aboutText" title="Leia com Carinho 🥰">
         Meu nome é João Vitor Teixeira da Silva, tenho 26 anos, sou do Rio de

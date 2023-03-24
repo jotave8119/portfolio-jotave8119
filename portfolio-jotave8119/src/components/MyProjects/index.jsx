@@ -28,7 +28,9 @@ import screenweather from "../../assets/screenweather.png";
 const MyProjects = () => {
   return (
     <>
-      <h2 className="proTitle">Projetos</h2>
+      <h2 className="proTitle" id="projects">
+        Projetos
+      </h2>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -51,12 +53,16 @@ const MyProjects = () => {
             title="Ver projeto"
             rel="noreferrer noopener"
           >
-            <img 
+            <img
               src={screendevducks}
               alt="devducks"
               loading="lazy"
               title="Ver devducks"
             />
+            <span class="desc">
+              <strong>Projeto Devducks</strong>
+              Clique na Imagem para ver o Projeto!
+            </span>
           </a>
         </SwiperSlide>
         <SwiperSlide>
@@ -72,6 +78,10 @@ const MyProjects = () => {
               loading="lazy"
               title="Ver devhelp"
             />
+             <span class="desc">
+              <strong>Projeto DevHelp</strong>
+              Clique na Imagem para ver o Projeto!
+            </span>
           </a>
         </SwiperSlide>
         <SwiperSlide>
@@ -87,6 +97,10 @@ const MyProjects = () => {
               loading="lazy"
               title="Ver KenizeHub"
             />
+             <span class="desc">
+              <strong>Projeto KenzieHub</strong>
+              Clique na Imagem para ver o Projeto!
+            </span>
           </a>
         </SwiperSlide>
         <SwiperSlide>
@@ -102,6 +116,10 @@ const MyProjects = () => {
               loading="lazy"
               title="Ver KenzieBurguer"
             />
+             <span class="desc">
+              <strong>Projeto KenzieBurger</strong>
+              Clique na Imagem para ver o Projeto!
+            </span>
           </a>
         </SwiperSlide>
         <SwiperSlide>
@@ -117,6 +135,10 @@ const MyProjects = () => {
               loading="lazy"
               title=" Ver NuKenzie"
             />
+             <span class="desc">
+              <strong>Projeto NuKenzie</strong>
+              Clique na Imagem para ver o Projeto!
+            </span>
           </a>
         </SwiperSlide>
         <SwiperSlide>
@@ -132,6 +154,10 @@ const MyProjects = () => {
               loading="lazy"
               title=" Ver WeatherApp"
             />
+             <span class="desc">
+              <strong>Projeto ClimaApp</strong>
+              Clique na Imagem para ver o Projeto!
+            </span>
           </a>
         </SwiperSlide>
       </Swiper>

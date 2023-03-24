@@ -43,9 +43,30 @@
   }
 
   .mySwiper img:hover{
-    filter: opacity(70%);
+    filter: blur(2px);
     transition: 0.5s;
   }
+
+
+.mySwiper a:hover .desc{
+    display: block;
+    font-size: 1rem;
+    padding: 10px 0;
+    background: #000000d7;
+    color: #ffffff;
+    position: absolute;
+    bottom: 350px;
+    left: 100px;
+    padding: 10px;
+    margin: 0;
+    width: 300px;
+}
+.mySwiper a:hover .desc strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size:1.5em;
+}
+
 
   @media(min-width:768px){
    .mySwiper{
@@ -54,7 +75,8 @@
   }
 
   .mySwiper img{
-    padding: 2em;
+    padding: 4em;
+
   }
 
   @media(min-width:1024px){
@@ -62,7 +84,7 @@
      height: 800px;
     }
     .mySwiper img{
-      padding: 2.5em;
+      padding: 4em;
     }
     .mySwiper a{
       height: 50px;

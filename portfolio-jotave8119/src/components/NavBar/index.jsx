@@ -2,6 +2,7 @@ import "./style.css";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import profile from "../../assets/profile.png";
+import {Link} from "react-scroll";
 
 const NavBar = () => {
   const navRef = useRef();
@@ -18,18 +19,26 @@ const NavBar = () => {
         </h2>
       </div>
       <nav ref={navRef}>
-        <a href="" title="Sobre">
+        <Link to="about"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500} title="Sobre">
           Sobre
-        </a>
-        <a href="" title="Projetos">
+        </Link>
+        <Link to="projects"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500} title="Projetos">
           Projetos
-        </a>
-        <a href="" title="Tecnologias">
+        </Link>
+        <Link href="" title="Tecnologias">
           Tecnologias
-        </a>
-        <a href="" title="Contato">
+        </Link>
+        <Link href="" title="Contato">
           Contato
-        </a>
+        </Link>
         <button className="openBtn closeBtn" onClick={showNavbar}>
           <FaTimes size={20} />
         </button>
