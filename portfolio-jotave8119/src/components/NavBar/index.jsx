@@ -2,7 +2,7 @@ import "./style.css";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import profile from "../../assets/profile.png";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const navRef = useRef();
@@ -14,29 +14,51 @@ const NavBar = () => {
     <header>
       <div className="photoBox">
         <img className="photo" title="João" src={profile} alt="João" />
-        <h2 className="name">
-          João
-        </h2>
+        <h2 className="name">João</h2>
       </div>
       <nav ref={navRef}>
-        <Link to="about"
+        <Link
+          to="about"
           spy={true}
           smooth={true}
           offset={50}
-          duration={500} title="Sobre">
+          duration={1000}
+          onClick={showNavbar}
+          title="Sobre"
+        >
           Sobre
         </Link>
-        <Link to="projects"
+        <Link
+          to="projects"
+          onClick={showNavbar}
           spy={true}
           smooth={true}
           offset={50}
-          duration={500} title="Projetos">
+          duration={1000}
+          title="Projetos"
+        >
           Projetos
         </Link>
-        <Link href="" title="Tecnologias">
+        <Link
+          to="techs"
+          onClick={showNavbar}
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          title="Tecnologias"
+        >
           Tecnologias
         </Link>
-        <Link href="" title="Contato">
+        <Link
+          to="contact"
+          onClick={showNavbar}
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          title="Contato"
+        >
           Contato
         </Link>
         <button className="openBtn closeBtn" onClick={showNavbar}>

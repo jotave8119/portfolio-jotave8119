@@ -45,7 +45,7 @@ const MyProjects = () => {
               loading="lazy"
               title="Ver devducks"
             />
-            <span class="desc">
+            <span className="desc">
               <strong>Projeto Devducks</strong>
               Clique na Imagem para ver o Projeto!
             </span>
@@ -64,7 +64,7 @@ const MyProjects = () => {
               loading="lazy"
               title="Ver devhelp"
             />
-             <span class="desc">
+             <span className="desc">
               <strong>Projeto DevHelp</strong>
               Clique na Imagem para ver o Projeto!
             </span>
@@ -83,7 +83,7 @@ const MyProjects = () => {
               loading="lazy"
               title="Ver KenizeHub"
             />
-             <span class="desc">
+             <span className="desc">
               <strong>Projeto KenzieHub</strong>
               Clique na Imagem para ver o Projeto!
             </span>
@@ -102,7 +102,7 @@ const MyProjects = () => {
               loading="lazy"
               title="Ver KenzieBurguer"
             />
-             <span class="desc">
+             <span className="desc">
               <strong>Projeto KenzieBurger</strong>
               Clique na Imagem para ver o Projeto!
             </span>
@@ -121,7 +121,7 @@ const MyProjects = () => {
               loading="lazy"
               title=" Ver NuKenzie"
             />
-             <span class="desc">
+             <span className="desc">
               <strong>Projeto NuKenzie</strong>
               Clique na Imagem para ver o Projeto!
             </span>
@@ -140,7 +140,7 @@ const MyProjects = () => {
               loading="lazy"
               title=" Ver WeatherApp"
             />
-             <span class="desc">
+             <span className="desc">
               <strong>Projeto ClimaApp</strong>
               Clique na Imagem para ver o Projeto!
             </span>
