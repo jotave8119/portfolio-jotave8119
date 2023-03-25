@@ -59,6 +59,18 @@ const NavBar = () => {
         >
           Contato
         </Link>
+        <Link
+          to="cv"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          title="Contato"
+          className="link"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Currículo
+        </Link>
       </div>
 
       <div

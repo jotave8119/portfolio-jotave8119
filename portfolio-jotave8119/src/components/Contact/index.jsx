@@ -11,8 +11,9 @@ const Contact = () => {
         <a
           className="linkedinLink"
           href="https://www.linkedin.com/in/joaoteixeira13/"
-          title="Linkedln"
+          title="Basta clicar na caixa"
           rel="noreferrer noopener"
+          target="_blank"
         >
           <FaLinkedinIn size={60} className="linkedin" /> Este é o meu Linkedln.
           Vamos nos conectar.
@@ -20,17 +21,17 @@ const Contact = () => {
         <a
           className="githubLink"
           href="https://github.com/jotave8119"
-          title="GitHub"
+          title="Basta clicar na caixa"
           rel="noreferrer noopener"
+          target="_blank"
         >
-          <BsGithub size={70} className="github" /> Aqui é o meu GitHub. Você
-          pode ver alguns dos meus projetos e contribuições. Não deixe de me
-          seguir.
+          <BsGithub size={70} className="github" /> Agora Você
+          pode ver alguns dos meus projetos e me seguir. 
         </a>
         <a
           className="gmailLink"
           href="mailto:teixeirajoaovitor0@gamil.com?subject=Vim pelo portfólio"
-          title="Email"
+          title="Basta clicar na caixa"
           rel="noreferrer noopener"
           target="_blank"
         >
