@@ -137,16 +137,28 @@ nav a:hover{
     align-items: center;
     background-color: #060606da;
     color: #ffffff;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     z-index: 9999;
     
   }
+
+  .name{
+    border-bottom: solid 2px #35baf8;
+  }
+
+  .photoBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   
-.Navbar > .photo{
-    height: 45px;
-    width: 45px;
+.Navbar > .photoBox > .photo{
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     object-fit: contain;
+    background-color: #000000;
+    box-shadow: #35baf8 0px 2px 5px;
 }
   
  .nav-items .link  {

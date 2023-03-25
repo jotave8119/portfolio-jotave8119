@@ -8,7 +8,11 @@ const NavBar = () => {
 
   return (
     <div className="Navbar">
+     <div className="photoBox">
+
       <img className="photo" title="João" src={profile} alt="João" />
+      <h2 className="name">João</h2>
+     </div>
       {/* <span className="nav-logo">DevLHB</span> */}
       <div className={`nav-items ${isOpen && "open"}`}>
         <Link
